@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Guru Prasad K S</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            scroll-behavior:smooth;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+            line-height:1.6;
+        }
+
+        header{
+            background:#111827;
+            padding:20px 10%;
+            position:sticky;
+            top:0;
+            z-index:1000;
+            box-shadow:0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav h1{
+            color:#38bdf8;
+            font-size:32px;
+        }
+
+        nav ul{
+            display:flex;
+            gap:20px;
+            list-style:none;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#38bdf8;
+        }
+
+        section{
+            padding:70px 10%;
+        }
+
+        .hero{
+            min-height:90vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+
+        .hero h2{
+            font-size:55px;
+            margin-bottom:15px;
+        }
+
+        .hero span{
+            color:#38bdf8;
+        }
+
+        .details{
+            margin-top:20px;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:15px;
+        }
+
+        .details a{
+            text-decoration:none;
+            color:white;
+            background:#1e293b;
+            padding:10px 15px;
+            border-radius:8px;
+            transition:0.3s;
+        }
+
+        .details a:hover{
+            background:#38bdf8;
+            color:black;
+            transform:scale(1.05);
+        }
+
+        h3{
+            color:#38bdf8;
+            margin-bottom:25px;
+            font-size:35px;
+            text-align:center;
+        }
+
+        .about p{
+            font-size:18px;
+            text-align:justify;
+        }
+
+        .skills-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .skill-box{
+            background:#1e293b;
+            padding:20px;
+            border-radius:15px;
+            transition:0.3s;
+        }
+
+        .skill-box:hover{
+            transform:translateY(-5px);
+            background:#334155;
+        }
+
+        .projects{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:25px;
+        }
+
+        .project-card{
+            background:#1e293b;
+            padding:25px;
+            border-radius:15px;
+            transition:0.3s;
+            cursor:pointer;
+        }
+
+        .project-card:hover{
+            transform:scale(1.03);
+            background:#334155;
+        }
+
+        .project-card h4{
+            color:#38bdf8;
+            margin-bottom:10px;
+        }
+
+        .certificate-btn{
+            display:inline-block;
+            margin-top:15px;
+            text-decoration:none;
+            background:#38bdf8;
+            color:black;
+            padding:10px 18px;
+            border-radius:8px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .certificate-btn:hover{
+            background:white;
+        }
+
+        .card{
+            background:#1e293b;
+            padding:25px;
+            border-radius:15px;
+            margin-bottom:20px;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#111827;
+            margin-top:30px;
+        }
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            nav ul{
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .hero h2{
+                font-size:40px;
+            }
+
+            section{
+                padding:60px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Guru Prasad K S</h1>
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#sports">Sports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <h2>Hello, I'm <span>Guru Prasad K S</span></h2>
+
+        <p>
+            AI & Machine Learning Enthusiast | Full Stack Developer | Data Science Learner
+        </p>
+
+        <div class="details">
+
+            <a href="tel:+919566344115">📞 +91 9566 344 115</a>
+
+            <a href="mailto:ksguruprasad2603@gmail.com" target="_blank">
+                📧 ksguruprasad2603@gmail.com
+            </a>
+
+            <a href="https://maps.google.com" target="_blank">
+                📍 Gummidipoondi, Tamil Nadu, India
+            </a>
+
+            <a href="https://leetcode.com/ksgp2603" target="_blank">
+                LeetCode
+            </a>
+
+            <a href="https://www.hackerrank.com/profile/ksguruprasad2603" target="_blank">
+                HackerRank
+            </a>
+
+            <a href="https://linkedin.com/ksgp2603" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/ksgp2603" target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="about" class="about">
+
+        <h3>About Me</h3>
+
+        <p>
+            I am a passionate and dedicated Computer Science student with strong interest in Artificial Intelligence, Machine Learning, Full Stack Development, and Data Science. I enjoy building innovative applications that solve real-world problems and improve user experience. I have worked on multiple technical projects related to healthcare, finance, analytics, and education. 
+            <br><br>
+            I continuously improve my technical and problem-solving skills through projects, certifications, internships, hackathons, and competitive programming platforms. Apart from academics and development, I actively participate in chess tournaments and technical competitions to enhance my analytical thinking and decision-making skills.
+        </p>
+
+    </section>
+
+    <section id="skills">
+
+        <h3>Skills</h3>
+
+        <div class="skills-container">
+
+            <div class="skill-box">
+                <h4>Programming</h4>
+                <p>C, C++, Java, Python</p>
+            </div>
+
+            <div class="skill-box">
+                <h4>Database</h4>
+                <p>MySQL</p>
+            </div>
+
+            <div class="skill-box">
+                <h4>Web Development</h4>
+                <p>HTML, CSS, JavaScript, React JS</p>
+            </div>
+
+            <div class="skill-box">
+                <h4>Tools</h4>
+                <p>GitHub, Power BI, Tableau</p>
+            </div>
+
+            <div class="skill-box">
+                <h4>Frameworks</h4>
+                <p>Spring Boot, LangChain, LangGraph, FastAPI, Streamlit</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="projects">
+
+        <h3>Projects</h3>
+
+        <div class="projects">
+
+            <div class="project-card"
+            onclick="openProject('https://github.com/KSGP2603/AI_Customer_Retention_Intelligence_System')">
+
+                <h4>AI Customer Retention Intelligence System</h4>
+
+                <p>
+                    Developed a Machine Learning-based customer churn prediction system with advanced analytics, dashboard integration, customer insights, and predictive modeling to help businesses improve customer retention strategies.
+                </p>
+
+            </div>
+
+            <div class="project-card"
+            onclick="openProject('https://github.com/KSGP2603/Stock_Price_Prediction')">
+
+                <h4>Stock Prediction System</h4>
+
+                <p>
+                    Built a stock market prediction platform using Machine Learning algorithms for forecasting stock trends, visualization, portfolio tracking, and performance analysis.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h3>Hackathon Participation</h3>
+
+        <div class="card">
+
+            <h4>HackNDroid 2.0 - VIT Hackathon</h4>
+
+            <p>
+                Participated in HackNDroid 2.0 conducted by VIT, where innovative technical solutions were developed collaboratively under competitive hackathon conditions.
+            </p>
+
+            <a href="#" class="certificate-btn" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h4>A Convolve AI/ML Hackathon - IIT GUHAWATI</h4>
+
+            <p>
+                Participated in A Convolve AI/ML Hackathon conducted by IIT Guhawati, where innovative technical solutions were developed collaboratively under competitive hackathon conditions.
+            </p>
+
+            <a href="#" class="certificate-btn" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="certifications">
+
+        <h3>Certifications</h3>
+
+        <div class="card">
+
+            <h4>Diploma in Computer Applications</h4>
+
+            <p>
+                KSM INFOTECH | Duration: 6 Months
+                <br><br>
+                Skills Learned:
+                MS Office (Word, Excel, PowerPoint), C, C++
+            </p>
+
+            <a href="#" class="certificate-btn" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h4>Database Management Systems Part 1 & 2</h4>
+
+            <p>
+                Infosys Springboard | Duration: 2 Months
+                <br><br>
+                Skills Learned:
+                MySQL, Relational Algebra, Concurrency, Transactions, Normalization, Denormalization
+            </p>
+
+            <a href="#" class="certificate-btn" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h4>Joy of Computing Using Python</h4>
+
+            <p>
+                NPTEL | Duration: 3 Months
+            </p>
+
+            <a href="#" class="certificate-btn" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="internships">
+
+        <h3>Internships</h3>
+
+        <div class="card">
+
+            <h4>Full Stack Development Internship</h4>
+
+            <p>
+                NSIC (National Small Industries Corporation)
+                <br>
+                Duration: 2 Weeks (Offline)
+                <br><br>
+                Skills:
+                HTML, CSS, JavaScript
+            </p>
+
+            <a href="#" class="certificate-btn" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h4>AI/ML Internship</h4>
+
+            <p>
+                InternPe
+                <br>
+                Duration: 1 Month
+                <br><br>
+                Skills:
+                Python, NumPy, Pandas, Scikit-Learn, Matplotlib, Seaborn
+            </p>
+
+            <a href="#" class="certificate-btn" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h4>Cyber Security & Ethical Hacking Internship</h4>
+
+            <p>
+                CodTech IT Solutions
+                <br>
+                Duration: 1 Month
+                <br><br>
+                Skills:
+                Penetration Testing, Network Security Analysis
+            </p>
+
+            <a href="#" class="certificate-btn" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="sports">
+
+        <h3>Sports Participations</h3>
+
+        <div class="card">
+
+            <h4>PlayU International FIDE Rated Rapid Open Chess Tournament</h4>
+
+            <p>
+                Venue: Nehru Stadium, Chennai
+                <br>
+                Score: 3 Points
+            </p>
+
+            <a href="#" class="certificate-btn" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h4>International FIDE Rated (Below 1600) Open Chess Tournament</h4>
+
+            <p>
+                Venue: Nehru Stadium, Chennai
+                <br>
+                Score: 4.5 Points
+            </p>
+
+            <a href="#" class="certificate-btn" target="_blank">
+                View Certificate
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Guru Prasad K S | Portfolio Website</p>
+    </footer>
+
+    <script>
+
+        function openProject(url){
+            window.open(url, "_blank");
+        }
+
+    </script>
+
+</body>
+</html>
